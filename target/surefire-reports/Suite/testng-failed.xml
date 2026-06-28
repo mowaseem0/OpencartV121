@@ -7,7 +7,7 @@
     <classes>
       <class name="TestCases.tc02_Login_Test">
         <methods>
-          <include name="Login" invocation-numbers="1"/>
+          <include name="Login" invocation-numbers="2"/>
           <include name="Teardown"/>
           <include name="setup"/>
         </methods>
