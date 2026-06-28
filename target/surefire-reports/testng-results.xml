@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-06-28T09:50:29 IST" name="Suite" finished-at="2026-06-28T09:51:15 IST" duration-ms="46321">
+    <groups>
+      <group name="Master">
+        <method signature="tc02_Login_Test.Login(java.lang.String,java.lang.String)[pri:0, instance:TestCases.tc02_Login_Test@7ec7ffd3]" name="Login" class="TestCases.tc02_Login_Test"/>
+      </group> <!-- Master -->
+      <group name="Datadriven">
+        <method signature="tc02_Login_Test.Login(java.lang.String,java.lang.String)[pri:0, instance:TestCases.tc02_Login_Test@7ec7ffd3]" name="Login" class="TestCases.tc02_Login_Test"/>
+      </group> <!-- Datadriven -->
+    </groups>
+    <test started-at="2026-06-28T09:50:29 IST" name="Master_Test" finished-at="2026-06-28T09:51:15 IST" duration-ms="46321">
+      <class name="TestCases.tc02_Login_Test">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:TestCases.tc02_Login_Test@7ec7ffd3]" started-at="2026-06-28T09:50:30 IST" name="setup" finished-at="2026-06-28T09:50:39 IST" duration-ms="9266" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[windows]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="Login(java.lang.String,java.lang.String)[pri:0, instance:TestCases.tc02_Login_Test@7ec7ffd3]" started-at="2026-06-28T09:50:47 IST" name="Login" data-provider="LoginData" finished-at="2026-06-28T09:50:52 IST" duration-ms="5286" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[EMZiZ@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[iCd542]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login -->
+        <test-method signature="Login(java.lang.String,java.lang.String)[pri:0, instance:TestCases.tc02_Login_Test@7ec7ffd3]" started-at="2026-06-28T09:50:52 IST" name="Login" data-provider="LoginData" finished-at="2026-06-28T09:50:58 IST" duration-ms="5518" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[AcUiK@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Nji415]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login -->
+        <test-method signature="Login(java.lang.String,java.lang.String)[pri:0, instance:TestCases.tc02_Login_Test@7ec7ffd3]" started-at="2026-06-28T09:50:58 IST" name="Login" data-provider="LoginData" finished-at="2026-06-28T09:51:03 IST" duration-ms="5638" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[NgNkF@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[oiY501]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login -->
+        <test-method signature="Login(java.lang.String,java.lang.String)[pri:0, instance:TestCases.tc02_Login_Test@7ec7ffd3]" started-at="2026-06-28T09:51:03 IST" name="Login" data-provider="LoginData" finished-at="2026-06-28T09:51:07 IST" duration-ms="3775" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[vrxQG@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[iMj858]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login -->
+        <test-method signature="Login(java.lang.String,java.lang.String)[pri:0, instance:TestCases.tc02_Login_Test@7ec7ffd3]" started-at="2026-06-28T09:51:07 IST" name="Login" data-provider="LoginData" finished-at="2026-06-28T09:51:11 IST" duration-ms="4285" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[zAylb@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[NFB092]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login -->
+        <test-method is-config="true" signature="Teardown()[pri:0, instance:TestCases.tc02_Login_Test@7ec7ffd3]" started-at="2026-06-28T09:51:11 IST" name="Teardown" finished-at="2026-06-28T09:51:15 IST" duration-ms="3493" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Teardown -->
+      </class> <!-- TestCases.tc02_Login_Test -->
+    </test> <!-- Master_Test -->
+  </suite> <!-- Suite -->
+</testng-results>

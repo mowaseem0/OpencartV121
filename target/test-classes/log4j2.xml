@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="INFO">
+    <Appenders>
+        
+        <!-- Current run log file (always new on each run) -->
+        <File name="CurrentFile"
+              fileName="logs/current.log"
+              append="false">
+            <PatternLayout>
+                <Pattern>%d{yyyy-MM-dd HH:mm:ss} [%t] %-5level %logger{36} - %msg%n</Pattern>
+            </PatternLayout>
+        </File>
+
+        <!-- All runs log file (append mode) -->
+        <File name="AllRunsFile"
+              fileName="logs/allRuns.log"
+              append="true">
+            <PatternLayout>
+                <Pattern>%d{yyyy-MM-dd HH:mm:ss} [%t] %-5level %logger{36} - %msg%n</Pattern>
+            </PatternLayout>
+        </File>
+
+    </Appenders>
+
+    <Loggers>
+        <Root level="Debug">
+           <AppenderRef ref="CurrentFile"/>
+            <AppenderRef ref="AllRunsFile"/>
+            <!--<AppenderRef ref="Console"/>-->
+        </Root>
+    </Loggers>
+</Configuration>
