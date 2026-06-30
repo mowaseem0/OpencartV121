@@ -1,19 +1,21 @@
 package TestCases;
 
 import org.testng.Assert;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
 
 import PageObjects.HomePage;
 import PageObjects.login_page;
 import TestBase.BaseClass;
 import Utilities.DataProviders;
-import Utilities.Excelutilily_ReadData;
 
 public class tc02_Login_Test extends BaseClass {
 	
-	String path = System.getProperty("user.dir")+"/testdata/Login_Data.xlsx";
-	Excelutilily_ReadData rd = new Excelutilily_ReadData(path);
+	
 	int r=1;
+	boolean b;
+	login_page lp;
+	HomePage hp;
 
 	@Test(dataProvider = "LoginData", dataProviderClass = DataProviders.class, groups = {"Datadriven","Master"})
 	public void Login(String user, String pass)
@@ -22,10 +24,10 @@ public class tc02_Login_Test extends BaseClass {
 		{
 			logger.info("***Starting TC02_Login_Test***");
 			logger.info("***Retrieving Data from Excel File through DataProvider***");
-			HomePage hp = new HomePage(driver);
+			hp = new HomePage(driver);
 			hp.myaccount();
 			hp.login();
-			login_page lp = new login_page(driver);
+			lp = new login_page(driver);
 			lp.username(user);
 			lp.password(pass);
 			lp.loginbtn();
@@ -37,6 +39,8 @@ public class tc02_Login_Test extends BaseClass {
 				rd.fillGreenColor("Register_Data", r, 2);
 				r++;
 				logger.info("***Test Passed***");
+				b=true;
+				
 			}
 			else
 			{
@@ -45,15 +49,27 @@ public class tc02_Login_Test extends BaseClass {
 				r++;
 				logger.info("***Test Failed***");
 				logger.debug("Debug Test");
+				b=false;
 			}
-			
-			lp.logout();
-			lp.login();
 		}
 		catch(Exception e)
 		{
 			logger.info("***Test Failed due to Exception Occurred***");
 			Assert.fail();
+		}
+	}
+	@AfterMethod
+	public void logout()
+	{
+		if(b==true)
+		{
+			hp.myaccount();
+			hp.logout();
+			lp.login();
+		}
+		else
+		{
+			lp.login();
 		}
 	}
 }

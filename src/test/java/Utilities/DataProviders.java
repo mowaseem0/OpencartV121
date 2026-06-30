@@ -6,7 +6,7 @@ import org.testng.annotations.DataProvider;
 
 public class DataProviders {
 	
-	@DataProvider(name = "LoginData", indices = {4,15,16,17,13,20})
+	@DataProvider(name = "LoginData", indices = {2,15,20})
 	public String[][] getData() throws IOException
 	{
 		String path = System.getProperty("user.dir")+"/testdata/Login_Data.xlsx";
@@ -31,7 +31,7 @@ public class DataProviders {
 	@DataProvider(name = "SearchData")
 	public String[][] getSearchData() throws IOException
 	{
-		String path = System.getProperty("user.dir")+"/testData/RegisterData.xlsx";
+		String path = System.getProperty("user.dir")+"/testdata/Login_Data.xlsx";
 		Excelutilily_ReadData xlutils = new Excelutilily_ReadData(path);
 		
 		int totalrows = xlutils.getRowCount("Search");

@@ -5,13 +5,13 @@
     <parameter name="os" value="windows"/>
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="TestCases.tc02_Login_Test">
+      <class name="TestCases.tc03_Search">
         <methods>
-          <include name="Login" invocation-numbers="2"/>
-          <include name="Teardown"/>
           <include name="setup"/>
+          <include name="Teardown"/>
+          <include name="SearchOptions" invocation-numbers="1"/>
         </methods>
-      </class> <!-- TestCases.tc02_Login_Test -->
+      </class> <!-- TestCases.tc03_Search -->
     </classes>
   </test> <!-- Master_Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

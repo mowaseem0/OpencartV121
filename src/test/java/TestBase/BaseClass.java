@@ -26,11 +26,16 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
+
+import Utilities.Excelutilily_ReadData;
 @Listeners(Utilities.ExtentReportManager.class)
 public abstract class BaseClass {
 	
 	protected static WebDriver driver;
 	protected Logger logger;
+	
+	String path = System.getProperty("user.dir")+"/testdata/Login_Data.xlsx";
+	public Excelutilily_ReadData rd = new Excelutilily_ReadData(path);
 	
 	
 	@SuppressWarnings("deprecation")
