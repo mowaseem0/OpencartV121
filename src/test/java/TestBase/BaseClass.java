@@ -33,6 +33,7 @@ public abstract class BaseClass {
 	protected Logger logger;
 	
 	
+	@SuppressWarnings("deprecation")
 	@BeforeClass(groups = {"Sanity","Master","Datadriven"})
 	@Parameters({"browser","os"})
 	protected void setup(@Optional("chrome") String br,@Optional("windows") String os) throws IOException

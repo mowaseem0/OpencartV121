@@ -2,22 +2,16 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Master_Test(failed)">
-    <parameter name="browser" value="Chrome"/>
+    <parameter name="os" value="windows"/>
+    <parameter name="browser" value="chrome"/>
     <classes>
       <class name="TestCases.tc02_Login_Test">
         <methods>
-          <include name="Login"/>
+          <include name="Login" invocation-numbers="2"/>
           <include name="Teardown"/>
           <include name="setup"/>
         </methods>
       </class> <!-- TestCases.tc02_Login_Test -->
-      <class name="TestCases.tc01_Registration">
-        <methods>
-          <include name="setup"/>
-          <include name="Teardown"/>
-          <include name="Register"/>
-        </methods>
-      </class> <!-- TestCases.tc01_Registration -->
     </classes>
   </test> <!-- Master_Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
