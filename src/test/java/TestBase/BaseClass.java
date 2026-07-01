@@ -33,9 +33,9 @@ public abstract class BaseClass {
 	
 	protected static WebDriver driver;
 	protected Logger logger;
-	
-	String path = System.getProperty("user.dir")+"/testdata/Login_Data.xlsx";
-	public Excelutilily_ReadData rd = new Excelutilily_ReadData(path);
+	protected Properties p;
+	protected String path = System.getProperty("user.dir")+"/testdata/Login_Data.xlsx";
+	protected Excelutilily_ReadData rd = new Excelutilily_ReadData(path);
 	
 	
 	@SuppressWarnings("deprecation")
@@ -43,7 +43,7 @@ public abstract class BaseClass {
 	@Parameters({"browser","os"})
 	protected void setup(@Optional("chrome") String br,@Optional("windows") String os) throws IOException
 	{
-		Properties p = new Properties();
+		p = new Properties();
 		FileReader f = new FileReader("./src//test//resources//config.properties");
 		p.load(f);
 		logger = LogManager.getLogger(this.getClass());
