@@ -8,6 +8,7 @@
       <!--<class name="TestCases.tc01_Registration"/>-->
       <!--<class name="TestCases.tc02_Login_Test"/>-->
       <class name="TestCases.tc03_Search"/>
+      <class name="TestCases.tc04_Product_Display"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

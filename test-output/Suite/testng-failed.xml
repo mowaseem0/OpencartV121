@@ -5,15 +5,15 @@
     <parameter name="os" value="windows"/>
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="TestCases.tc03_Search">
+      <class name="TestCases.tc04_Product_Display">
         <methods>
-          <include name="logontoweb"/>
+          <include name="SearchOptions" invocation-numbers="1"/>
           <include name="setup"/>
-          <include name="logofffromweb"/>
           <include name="Teardown"/>
-          <include name="SearchOptions"/>
+          <include name="logontoweb"/>
+          <include name="logofffromweb"/>
         </methods>
-      </class> <!-- TestCases.tc03_Search -->
+      </class> <!-- TestCases.tc04_Product_Display -->
     </classes>
   </test> <!-- Master_Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
