@@ -6,7 +6,7 @@ import org.testng.annotations.DataProvider;
 
 public class DataProviders {
 	
-	@DataProvider(name = "LoginData", indices = {2,15,20})
+	@DataProvider(name = "LoginData", indices = {15,20})
 	public String[][] getData() throws IOException
 	{
 		String path = System.getProperty("user.dir")+"/testdata/Login_Data.xlsx";

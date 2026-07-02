@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="8" passed="8" failed="0" skipped="0">
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-07-01T19:55:40 IST" name="Suite" finished-at="2026-07-01T19:56:12 IST" duration-ms="32036">
+  <suite started-at="2026-07-02T16:42:16 IST" name="Suite" finished-at="2026-07-02T16:42:32 IST" duration-ms="16132">
     <groups>
     </groups>
-    <test started-at="2026-07-01T19:55:40 IST" name="Master_Test" finished-at="2026-07-01T19:56:12 IST" duration-ms="32036">
-      <class name="TestCases.tc03_Search">
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:TestCases.tc03_Search@6adbc9d]" started-at="2026-07-01T19:55:40 IST" name="setup" finished-at="2026-07-01T19:55:46 IST" duration-ms="5726" status="PASS">
+    <test started-at="2026-07-02T16:42:16 IST" name="Master_Test" finished-at="2026-07-02T16:42:32 IST" duration-ms="16132">
+      <class name="TestCases.tc06_Wish_List_Test">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:TestCases.tc06_Wish_List_Test@c8c12ac]" started-at="2026-07-02T16:42:16 IST" name="setup" finished-at="2026-07-02T16:42:23 IST" duration-ms="6503" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -23,11 +23,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="logontoweb()[pri:1, instance:TestCases.tc03_Search@6adbc9d]" started-at="2026-07-01T19:55:46 IST" name="logontoweb" finished-at="2026-07-01T19:55:49 IST" duration-ms="2849" status="PASS">
+        <test-method signature="logontoweb()[pri:1, instance:TestCases.tc06_Wish_List_Test@c8c12ac]" started-at="2026-07-02T16:42:23 IST" name="logontoweb" finished-at="2026-07-02T16:42:26 IST" duration-ms="2836" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logontoweb -->
-        <test-method signature="SearchOptions(java.lang.String)[pri:2, instance:TestCases.tc03_Search@6adbc9d]" started-at="2026-07-01T19:55:51 IST" name="SearchOptions" data-provider="SearchData" finished-at="2026-07-01T19:55:54 IST" depends-on-methods="TestCases.tc03_Search.logontoweb" duration-ms="2354" status="PASS">
+        <test-method signature="SearchOptions(java.lang.String)[pri:2, instance:TestCases.tc06_Wish_List_Test@c8c12ac]" started-at="2026-07-02T16:42:27 IST" name="SearchOptions" data-provider="SearchData" finished-at="2026-07-02T16:42:29 IST" depends-on-methods="TestCases.tc06_Wish_List_Test.logontoweb" duration-ms="1815" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -38,7 +38,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SearchOptions -->
-        <test-method signature="SearchOptions(java.lang.String)[pri:2, instance:TestCases.tc03_Search@6adbc9d]" started-at="2026-07-01T19:55:54 IST" name="SearchOptions" data-provider="SearchData" finished-at="2026-07-01T19:55:55 IST" depends-on-methods="TestCases.tc03_Search.logontoweb" duration-ms="1591" status="PASS">
+        <test-method signature="SearchOptions(java.lang.String)[pri:2, instance:TestCases.tc06_Wish_List_Test@c8c12ac]" started-at="2026-07-02T16:42:29 IST" name="SearchOptions" data-provider="SearchData" finished-at="2026-07-02T16:42:31 IST" depends-on-methods="TestCases.tc06_Wish_List_Test.logontoweb" duration-ms="1386" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -49,67 +49,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SearchOptions -->
-        <test-method signature="logofffromweb()[pri:3, instance:TestCases.tc03_Search@6adbc9d]" started-at="2026-07-01T19:55:55 IST" name="logofffromweb" finished-at="2026-07-01T19:55:56 IST" depends-on-methods="TestCases.tc03_Search.SearchOptions" duration-ms="801" status="PASS">
+        <test-method signature="logofffromweb()[pri:3, instance:TestCases.tc06_Wish_List_Test@c8c12ac]" started-at="2026-07-02T16:42:31 IST" name="logofffromweb" finished-at="2026-07-02T16:42:31 IST" depends-on-methods="TestCases.tc06_Wish_List_Test.SearchOptions" duration-ms="656" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logofffromweb -->
-        <test-method is-config="true" signature="Teardown()[pri:0, instance:TestCases.tc03_Search@6adbc9d]" started-at="2026-07-01T19:55:56 IST" name="Teardown" finished-at="2026-07-01T19:55:57 IST" duration-ms="639" status="PASS">
+        <test-method is-config="true" signature="Teardown()[pri:0, instance:TestCases.tc06_Wish_List_Test@c8c12ac]" started-at="2026-07-02T16:42:31 IST" name="Teardown" finished-at="2026-07-02T16:42:32 IST" duration-ms="465" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Teardown -->
-      </class> <!-- TestCases.tc03_Search -->
-      <class name="TestCases.tc04_Product_Display">
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:TestCases.tc04_Product_Display@9597028]" started-at="2026-07-01T19:55:57 IST" name="setup" finished-at="2026-07-01T19:56:00 IST" duration-ms="3440" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[windows]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="logontoweb()[pri:1, instance:TestCases.tc04_Product_Display@9597028]" started-at="2026-07-01T19:56:00 IST" name="logontoweb" finished-at="2026-07-01T19:56:03 IST" duration-ms="2975" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logontoweb -->
-        <test-method signature="SearchOptions(java.lang.String)[pri:2, instance:TestCases.tc04_Product_Display@9597028]" started-at="2026-07-01T19:56:03 IST" name="SearchOptions" data-provider="SearchData" finished-at="2026-07-01T19:56:07 IST" depends-on-methods="TestCases.tc04_Product_Display.logontoweb" duration-ms="3524" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[imac]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- SearchOptions -->
-        <test-method signature="SearchOptions(java.lang.String)[pri:2, instance:TestCases.tc04_Product_Display@9597028]" started-at="2026-07-01T19:56:07 IST" name="SearchOptions" data-provider="SearchData" finished-at="2026-07-01T19:56:11 IST" depends-on-methods="TestCases.tc04_Product_Display.logontoweb" duration-ms="3871" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[macbook pro]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- SearchOptions -->
-        <test-method signature="logofffromweb()[pri:3, instance:TestCases.tc04_Product_Display@9597028]" started-at="2026-07-01T19:56:11 IST" name="logofffromweb" finished-at="2026-07-01T19:56:11 IST" depends-on-methods="TestCases.tc04_Product_Display.SearchOptions" duration-ms="649" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logofffromweb -->
-        <test-method is-config="true" signature="Teardown()[pri:0, instance:TestCases.tc04_Product_Display@9597028]" started-at="2026-07-01T19:56:11 IST" name="Teardown" finished-at="2026-07-01T19:56:12 IST" duration-ms="428" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Teardown -->
-      </class> <!-- TestCases.tc04_Product_Display -->
+      </class> <!-- TestCases.tc06_Wish_List_Test -->
     </test> <!-- Master_Test -->
   </suite> <!-- Suite -->
 </testng-results>

@@ -3,17 +3,19 @@ package TestCases;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import PageObjects.Add_to_cart_page;
 import PageObjects.HomePage;
 import PageObjects.SearchPage;
 import PageObjects.login_page;
 import TestBase.BaseClass;
 import Utilities.DataProviders;
 
-public class tc03_Search extends BaseClass{
-	
+public class tc05_Add_to_cart_test extends BaseClass {
+
 	SearchPage sp;
 	HomePage hp;
 	login_page lp;
+	Add_to_cart_page acp;
 	int r=1;
 	
 	@Test(priority = 1)
@@ -47,28 +49,22 @@ public class tc03_Search extends BaseClass{
 	{
 		logger.info("***Searching the Items using dataprovider Method***");
 		sp = new SearchPage(driver);
+		acp = new Add_to_cart_page(driver);
 		sp.SearchBar(data);
 		sp.Search();
 		sp.Img();
-		String dol = sp.dollar();
-		try 
-		{
-			rd.setCellData("Search", r, 1, dol);
-			r++;
-		} 
-		catch (Exception e) 
-		{
-			
-			logger.info(e.getMessage());
-		}
+		logger.info("***Adding product to the Cart***");
+		acp.AddtoCart();
+		acp.checkout();
 		sp.clearsearch();		
 	}
 	
 	@Test(priority = 3, dependsOnMethods = {"SearchOptions"})
-	public void logofffromweb()
+	public void logofffromweb() throws InterruptedException
 	{
 		hp.myaccount();
 		hp.logout();
 		logger.info("***Logout from the Website***");
 	}
+	
 }

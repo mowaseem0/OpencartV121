@@ -3,15 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="TestCases.tc03_Search">
+      <class name="TestCases.tc06_Wish_List_Test">
         <methods>
+          <include name="logofffromweb"/>
           <include name="logontoweb"/>
           <include name="setup"/>
-          <include name="logofffromweb"/>
           <include name="Teardown"/>
-          <include name="SearchOptions"/>
+          <include name="SearchOptions" invocation-numbers="0 1"/>
         </methods>
-      </class> <!-- TestCases.tc03_Search -->
+      </class> <!-- TestCases.tc06_Wish_List_Test -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

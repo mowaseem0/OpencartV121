@@ -5,16 +5,17 @@ import org.testng.annotations.Test;
 
 import PageObjects.HomePage;
 import PageObjects.SearchPage;
+import PageObjects.Wish_List_Page;
 import PageObjects.login_page;
 import TestBase.BaseClass;
 import Utilities.DataProviders;
 
-public class tc03_Search extends BaseClass{
-	
+public class tc06_Wish_List_Test extends BaseClass{
+
 	SearchPage sp;
 	HomePage hp;
 	login_page lp;
-	int r=1;
+	Wish_List_Page wlp;
 	
 	@Test(priority = 1)
 	public void logontoweb()
@@ -47,25 +48,17 @@ public class tc03_Search extends BaseClass{
 	{
 		logger.info("***Searching the Items using dataprovider Method***");
 		sp = new SearchPage(driver);
+		wlp = new Wish_List_Page(driver);
 		sp.SearchBar(data);
 		sp.Search();
-		sp.Img();
-		String dol = sp.dollar();
-		try 
-		{
-			rd.setCellData("Search", r, 1, dol);
-			r++;
-		} 
-		catch (Exception e) 
-		{
-			
-			logger.info(e.getMessage());
-		}
+		wlp.Addwish();
+		wlp.wishlist();
+		logger.info("***Adding product to WishList***");
 		sp.clearsearch();		
 	}
 	
 	@Test(priority = 3, dependsOnMethods = {"SearchOptions"})
-	public void logofffromweb()
+	public void logofffromweb() throws InterruptedException
 	{
 		hp.myaccount();
 		hp.logout();

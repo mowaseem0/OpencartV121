@@ -5,10 +5,12 @@
   <parameter name="browser" value="chrome"/>
   <parameter name="os" value="windows"/>
    <classes>
-      <!--<class name="TestCases.tc01_Registration"/>-->
-      <!--<class name="TestCases.tc02_Login_Test"/>-->
+      <class name="TestCases.tc01_Registration"/>
+      <class name="TestCases.tc02_Login_Test"/>
       <class name="TestCases.tc03_Search"/>
       <class name="TestCases.tc04_Product_Display"/>
+   	  <class name="TestCases.tc05_Add_to_cart_test"/>	
+   	  <class name="TestCases.tc06_Wish_List_Test"/>	
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
