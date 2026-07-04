@@ -5,15 +5,14 @@
     <parameter name="os" value="windows"/>
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="TestCases.tc06_Wish_List_Test">
+      <class name="TestCases.tc07_Shopcart_Test">
         <methods>
-          <include name="logofffromweb"/>
-          <include name="logontoweb"/>
+          <include name="CalculateValues"/>
           <include name="setup"/>
           <include name="Teardown"/>
-          <include name="SearchOptions" invocation-numbers="0 1"/>
+          <include name="logofffromweb"/>
         </methods>
-      </class> <!-- TestCases.tc06_Wish_List_Test -->
+      </class> <!-- TestCases.tc07_Shopcart_Test -->
     </classes>
   </test> <!-- Master_Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-07-02T16:42:16 IST" name="Suite" finished-at="2026-07-02T16:42:32 IST" duration-ms="16132">
+  <suite started-at="2026-07-04T14:53:15 IST" name="Suite" finished-at="2026-07-04T14:53:40 IST" duration-ms="25786">
     <groups>
     </groups>
-    <test started-at="2026-07-02T16:42:16 IST" name="Master_Test" finished-at="2026-07-02T16:42:32 IST" duration-ms="16132">
-      <class name="TestCases.tc06_Wish_List_Test">
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:TestCases.tc06_Wish_List_Test@c8c12ac]" started-at="2026-07-02T16:42:16 IST" name="setup" finished-at="2026-07-02T16:42:23 IST" duration-ms="6503" status="PASS">
+    <test started-at="2026-07-04T14:53:15 IST" name="Master_Test" finished-at="2026-07-04T14:53:40 IST" duration-ms="25786">
+      <class name="TestCases.tc07_Shopcart_Test">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:TestCases.tc07_Shopcart_Test@6adbc9d]" started-at="2026-07-04T14:53:15 IST" name="setup" finished-at="2026-07-04T14:53:21 IST" duration-ms="5630" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -23,11 +23,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="logontoweb()[pri:1, instance:TestCases.tc06_Wish_List_Test@c8c12ac]" started-at="2026-07-02T16:42:23 IST" name="logontoweb" finished-at="2026-07-02T16:42:26 IST" duration-ms="2836" status="PASS">
+        <test-method signature="logontoweb()[pri:1, instance:TestCases.tc07_Shopcart_Test@6adbc9d]" started-at="2026-07-04T14:53:21 IST" name="logontoweb" finished-at="2026-07-04T14:53:24 IST" duration-ms="3583" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logontoweb -->
-        <test-method signature="SearchOptions(java.lang.String)[pri:2, instance:TestCases.tc06_Wish_List_Test@c8c12ac]" started-at="2026-07-02T16:42:27 IST" name="SearchOptions" data-provider="SearchData" finished-at="2026-07-02T16:42:29 IST" depends-on-methods="TestCases.tc06_Wish_List_Test.logontoweb" duration-ms="1815" status="PASS">
+        <test-method signature="AddtoCart(java.lang.String)[pri:2, instance:TestCases.tc07_Shopcart_Test@6adbc9d]" started-at="2026-07-04T14:53:26 IST" name="AddtoCart" data-provider="SearchData" finished-at="2026-07-04T14:53:28 IST" depends-on-methods="TestCases.tc07_Shopcart_Test.logontoweb" duration-ms="2031" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -37,8 +37,8 @@
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- SearchOptions -->
-        <test-method signature="SearchOptions(java.lang.String)[pri:2, instance:TestCases.tc06_Wish_List_Test@c8c12ac]" started-at="2026-07-02T16:42:29 IST" name="SearchOptions" data-provider="SearchData" finished-at="2026-07-02T16:42:31 IST" depends-on-methods="TestCases.tc06_Wish_List_Test.logontoweb" duration-ms="1386" status="PASS">
+        </test-method> <!-- AddtoCart -->
+        <test-method signature="AddtoCart(java.lang.String)[pri:2, instance:TestCases.tc07_Shopcart_Test@6adbc9d]" started-at="2026-07-04T14:53:28 IST" name="AddtoCart" data-provider="SearchData" finished-at="2026-07-04T14:53:30 IST" depends-on-methods="TestCases.tc07_Shopcart_Test.logontoweb" duration-ms="1430" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -48,16 +48,20 @@
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- SearchOptions -->
-        <test-method signature="logofffromweb()[pri:3, instance:TestCases.tc06_Wish_List_Test@c8c12ac]" started-at="2026-07-02T16:42:31 IST" name="logofffromweb" finished-at="2026-07-02T16:42:31 IST" depends-on-methods="TestCases.tc06_Wish_List_Test.SearchOptions" duration-ms="656" status="PASS">
+        </test-method> <!-- AddtoCart -->
+        <test-method signature="CalculateValues()[pri:3, instance:TestCases.tc07_Shopcart_Test@6adbc9d]" started-at="2026-07-04T14:53:30 IST" name="CalculateValues" finished-at="2026-07-04T14:53:39 IST" duration-ms="9623" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CalculateValues -->
+        <test-method signature="logofffromweb()[pri:4, instance:TestCases.tc07_Shopcart_Test@6adbc9d]" started-at="2026-07-04T14:53:39 IST" name="logofffromweb" finished-at="2026-07-04T14:53:40 IST" depends-on-methods="TestCases.tc07_Shopcart_Test.CalculateValues" duration-ms="637" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logofffromweb -->
-        <test-method is-config="true" signature="Teardown()[pri:0, instance:TestCases.tc06_Wish_List_Test@c8c12ac]" started-at="2026-07-02T16:42:31 IST" name="Teardown" finished-at="2026-07-02T16:42:32 IST" duration-ms="465" status="PASS">
+        <test-method is-config="true" signature="Teardown()[pri:0, instance:TestCases.tc07_Shopcart_Test@6adbc9d]" started-at="2026-07-04T14:53:40 IST" name="Teardown" finished-at="2026-07-04T14:53:40 IST" duration-ms="541" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Teardown -->
-      </class> <!-- TestCases.tc06_Wish_List_Test -->
+      </class> <!-- TestCases.tc07_Shopcart_Test -->
     </test> <!-- Master_Test -->
   </suite> <!-- Suite -->
 </testng-results>

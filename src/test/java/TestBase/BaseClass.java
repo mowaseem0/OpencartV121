@@ -89,8 +89,8 @@ public abstract class BaseClass {
 		}
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
-		driver.manage().deleteAllCookies();
 		driver.get(p.getProperty("url"));
+		driver.manage().deleteAllCookies();
 	}
 	
 	@AfterClass(groups = {"Sanity","Master","Datadriven"})
