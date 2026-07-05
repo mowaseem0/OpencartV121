@@ -4,11 +4,10 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.ui.ExpectedConditions;
 
-public class Shop_cart_Page extends BasePage
-{
-	public Shop_cart_Page(WebDriver driver) 
+public class Shop_cart_Page1 extends BasePage {
+
+	public Shop_cart_Page1(WebDriver driver) 
 	{
 		super(driver);
 	}
@@ -21,23 +20,24 @@ public class Shop_cart_Page extends BasePage
 	
 	public void Continuebtn()
 	{
-		fluentWait.until(ExpectedConditions.elementToBeClickable(contbtn));
-		contbtn.click();
+		js.executeScript("arguments[0].click();", contbtn);
 	}
 	
 	public void Quantity(int r, String n)
 	{
-		WebElement text = fluentWait.until(ExpectedConditions.elementToBeClickable(By.xpath("//div[@class='table-responsive']//table//tbody//tr["+r+"]//td[4]//div//input")));
-		text.clear();
-		text.sendKeys(n);
-		WebElement btn = fluentWait.until(ExpectedConditions.elementToBeClickable(By.xpath("//div[@class='table-responsive']//table//tbody//tr["+r+"]//td[4]//div//span//button[@data-original-title='Update']")));
-		btn.click();
+		WebElement text = driver.findElement(By.xpath("//div[@class='table-responsive']//table//tbody//tr["+r+"]//td[4]//div//input"));
+		js.executeScript("arguments[0].value = '';", text);
+		js.executeScript("arguments[0].value = arguments[1]", text,n);
+		//text.clear();
+		//text.sendKeys(n);
+		WebElement btn = driver.findElement(By.xpath("//div[@class='table-responsive']//table//tbody//tr["+r+"]//td[4]//div//span//button[@data-original-title='Update']"));
+		js.executeScript("arguments[0].click();", btn);
 	}
 	
 	public void Nullvalues(int r1)
 	{
-		WebElement btn1 = fluentWait.until(ExpectedConditions.elementToBeClickable(By.xpath("//div[@class='table-responsive']//table//tbody//tr[\"+r1+\"]//td[4]//div//span//button[@data-original-title='Remove']")));
-		btn1.click();
+		WebElement btn1 = driver.findElement(By.xpath("//div[@class='table-responsive']//table//tbody//tr["+r1+"]//td[4]//div//span//button[@data-original-title='Remove']"));
+		js.executeScript("arguments[0].click();", btn1);
 	}
 	
 	public String Value1()
@@ -59,5 +59,4 @@ public class Shop_cart_Page extends BasePage
 	{
 		shopcart.click();
 	}
-
 }

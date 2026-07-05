@@ -21,6 +21,7 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Listeners;
@@ -36,7 +37,7 @@ public abstract class BaseClass {
 	protected Properties p;
 	protected String path = System.getProperty("user.dir")+"/testdata/Login_Data.xlsx";
 	protected Excelutilily_ReadData rd = new Excelutilily_ReadData(path);
-	
+	protected WebDriverWait wait;
 	
 	@SuppressWarnings("deprecation")
 	@BeforeClass(groups = {"Sanity","Master","Datadriven"})
@@ -89,6 +90,7 @@ public abstract class BaseClass {
 		}
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+		wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 		driver.get(p.getProperty("url"));
 		driver.manage().deleteAllCookies();
 	}

@@ -8,9 +8,10 @@
       <class name="TestCases.tc07_Shopcart_Test">
         <methods>
           <include name="CalculateValues"/>
+          <include name="AddtoCart"/>
           <include name="setup"/>
           <include name="Teardown"/>
-          <include name="logofffromweb"/>
+          <include name="logontoweb"/>
         </methods>
       </class> <!-- TestCases.tc07_Shopcart_Test -->
     </classes>
