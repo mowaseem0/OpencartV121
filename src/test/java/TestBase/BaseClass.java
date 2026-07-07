@@ -3,10 +3,12 @@ package TestBase;
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
+import java.net.HttpURLConnection;
 import java.net.URL;
 import java.text.SimpleDateFormat;
 import java.time.Duration;
 import java.util.Date;
+import java.util.List;
 import java.util.Properties;
 
 import org.apache.commons.lang3.RandomStringUtils;
@@ -16,6 +18,7 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.Platform;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -38,6 +41,8 @@ public abstract class BaseClass {
 	protected String path = System.getProperty("user.dir")+"/testdata/Login_Data.xlsx";
 	protected Excelutilily_ReadData rd = new Excelutilily_ReadData(path);
 	protected WebDriverWait wait;
+	protected static int brokenlinks = 0;
+	protected static int unbrokenlinks = 0;
 	
 	@SuppressWarnings("deprecation")
 	@BeforeClass(groups = {"Sanity","Master","Datadriven"})
@@ -140,5 +145,41 @@ public abstract class BaseClass {
 		
 		return targetFilePath;
 		
+	}
+	public static void Brokenlinks(List<WebElement> link)
+	{
+		List<WebElement> footerlinks = link;
+		
+		for(WebElement links : footerlinks)
+		{
+			String hrefvalue = links.getAttribute("href");
+			
+			if(hrefvalue==null || hrefvalue.isEmpty())
+			{
+				System.out.println(hrefvalue+" - Link is empty");
+			}
+			else
+			{
+				try
+				{
+					@SuppressWarnings("deprecation")
+					URL linkurl = new URL(hrefvalue);
+					HttpURLConnection conn = (HttpURLConnection) linkurl.openConnection();
+					conn.connect();
+					if(conn.getResponseCode()>400)
+					{
+						brokenlinks++;
+					}
+					else
+					{
+						unbrokenlinks++;
+					}
+				}
+				catch(Exception e)
+				{
+					e.getMessage();
+				}
+			}
+		}
 	}
 }

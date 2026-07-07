@@ -1,19 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Master_Test(failed)">
-    <parameter name="os" value="windows"/>
-    <parameter name="browser" value="chrome"/>
+  <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="TestCases.tc07_Shopcart_Test">
+      <class name="TestCases.tc00_BrokenLinksonHomePage">
         <methods>
-          <include name="CalculateValues"/>
-          <include name="AddtoCart"/>
+          <include name="FooterLinks"/>
           <include name="setup"/>
           <include name="Teardown"/>
-          <include name="logontoweb"/>
+          <include name="Toplinks"/>
+          <include name="clear"/>
         </methods>
-      </class> <!-- TestCases.tc07_Shopcart_Test -->
+      </class> <!-- TestCases.tc00_BrokenLinksonHomePage -->
     </classes>
-  </test> <!-- Master_Test(failed) -->
+  </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

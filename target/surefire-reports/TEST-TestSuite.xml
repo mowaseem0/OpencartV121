@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="83.649" tests="20" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="107.177" tests="26" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="24"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -15,7 +15,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="IN"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-24\bin"/>
-    <property name="sun.java.command" value="C:\Users\mohdw\AppData\Local\Temp\surefire1956136224469566509\surefirebooter-20260702164432138_3.jar C:\Users\mohdw\AppData\Local\Temp\surefire1956136224469566509 2026-07-02T16-44-31_780-jvmRun1 surefire-20260702164432138_1tmp surefire_0-20260702164432138_2tmp"/>
+    <property name="sun.java.command" value="C:\Users\mohdw\AppData\Local\Temp\surefire11966174574697148603\surefirebooter-20260707195208753_3.jar C:\Users\mohdw\AppData\Local\Temp\surefire11966174574697148603 2026-07-07T19-52-08_404-jvmRun1 surefire-20260707195208753_1tmp surefire_0-20260707195208753_2tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="C:\Users\mohdw\eclipse-workspace\OpencartV121\target\test-classes;C:\Users\mohdw\eclipse-workspace\OpencartV121\target\classes;C:\Users\mohdw\.m2\repository\org\seleniumhq\selenium\selenium-java\4.45.0\selenium-java-4.45.0.jar;C:\Users\mohdw\.m2\repository\org\seleniumhq\selenium\selenium-api\4.45.0\selenium-api-4.45.0.jar;C:\Users\mohdw\.m2\repository\org\jspecify\jspecify\1.0.0\jspecify-1.0.0.jar;C:\Users\mohdw\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.45.0\selenium-chrome-driver-4.45.0.jar;C:\Users\mohdw\.m2\repository\com\google\auto\service\auto-service-annotations\1.1.1\auto-service-annotations-1.1.1.jar;C:\Users\mohdw\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.45.0\selenium-chromium-driver-4.45.0.jar;C:\Users\mohdw\.m2\repository\org\seleniumhq\selenium\selenium-json\4.45.0\selenium-json-4.45.0.jar;C:\Users\mohdw\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.45.0\selenium-manager-4.45.0.jar;C:\Users\mohdw\.m2\repository\org\seleniumhq\selenium\selenium-devtools-latest\4.45.0\selenium-devtools-latest-4.45.0.jar;C:\Users\mohdw\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v147\4.45.0\selenium-devtools-v147-4.45.0.jar;C:\Users\mohdw\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v148\4.45.0\selenium-devtools-v148-4.45.0.jar;C:\Users\mohdw\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v149\4.45.0\selenium-devtools-v149-4.45.0.jar;C:\Users\mohdw\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.45.0\selenium-edge-driver-4.45.0.jar;C:\Users\mohdw\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.45.0\selenium-firefox-driver-4.45.0.jar;C:\Users\mohdw\.m2\repository\org\seleniumhq\selenium\selenium-http\4.45.0\selenium-http-4.45.0.jar;C:\Users\mohdw\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.45.0\selenium-ie-driver-4.45.0.jar;C:\Users\mohdw\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.45.0\selenium-remote-driver-4.45.0.jar;C:\Users\mohdw\.m2\repository\com\google\guava\guava\33.6.0-jre\guava-33.6.0-jre.jar;C:\Users\mohdw\.m2\repository\com\google\guava\failureaccess\1.0.3\failureaccess-1.0.3.jar;C:\Users\mohdw\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\mohdw\.m2\repository\com\google\errorprone\error_prone_annotations\2.47.0\error_prone_annotations-2.47.0.jar;C:\Users\mohdw\.m2\repository\com\google\j2objc\j2objc-annotations\3.1\j2objc-annotations-3.1.jar;C:\Users\mohdw\.m2\repository\io\opentelemetry\opentelemetry-api\1.63.0\opentelemetry-api-1.63.0.jar;C:\Users\mohdw\.m2\repository\io\opentelemetry\opentelemetry-context\1.63.0\opentelemetry-context-1.63.0.jar;C:\Users\mohdw\.m2\repository\io\opentelemetry\opentelemetry-common\1.63.0\opentelemetry-common-1.63.0.jar;C:\Users\mohdw\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.63.0\opentelemetry-exporter-logging-1.63.0.jar;C:\Users\mohdw\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.63.0\opentelemetry-sdk-common-1.63.0.jar;C:\Users\mohdw\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.63.0\opentelemetry-sdk-extension-autoconfigure-spi-1.63.0.jar;C:\Users\mohdw\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.63.0\opentelemetry-sdk-extension-autoconfigure-1.63.0.jar;C:\Users\mohdw\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.63.0\opentelemetry-sdk-trace-1.63.0.jar;C:\Users\mohdw\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.63.0\opentelemetry-sdk-1.63.0.jar;C:\Users\mohdw\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.63.0\opentelemetry-sdk-metrics-1.63.0.jar;C:\Users\mohdw\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.63.0\opentelemetry-sdk-logs-1.63.0.jar;C:\Users\mohdw\.m2\repository\net\bytebuddy\byte-buddy\1.18.10\byte-buddy-1.18.10.jar;C:\Users\mohdw\.m2\repository\org\seleniumhq\selenium\selenium-os\4.45.0\selenium-os-4.45.0.jar;C:\Users\mohdw\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.45.0\selenium-safari-driver-4.45.0.jar;C:\Users\mohdw\.m2\repository\org\seleniumhq\selenium\selenium-support\4.45.0\selenium-support-4.45.0.jar;C:\Users\mohdw\.m2\repository\org\apache\poi\poi\5.5.1\poi-5.5.1.jar;C:\Users\mohdw\.m2\repository\commons-codec\commons-codec\1.20.0\commons-codec-1.20.0.jar;C:\Users\mohdw\.m2\repository\org\apache\commons\commons-collections4\4.5.0\commons-collections4-4.5.0.jar;C:\Users\mohdw\.m2\repository\org\apache\commons\commons-math3\3.6.1\commons-math3-3.6.1.jar;C:\Users\mohdw\.m2\repository\com\zaxxer\SparseBitSet\1.3\SparseBitSet-1.3.jar;C:\Users\mohdw\.m2\repository\org\apache\poi\poi-ooxml\5.5.1\poi-ooxml-5.5.1.jar;C:\Users\mohdw\.m2\repository\org\apache\poi\poi-ooxml-lite\5.5.1\poi-ooxml-lite-5.5.1.jar;C:\Users\mohdw\.m2\repository\org\apache\xmlbeans\xmlbeans\5.3.0\xmlbeans-5.3.0.jar;C:\Users\mohdw\.m2\repository\org\apache\commons\commons-compress\1.28.0\commons-compress-1.28.0.jar;C:\Users\mohdw\.m2\repository\com\github\virtuald\curvesapi\1.08\curvesapi-1.08.jar;C:\Users\mohdw\.m2\repository\org\apache\logging\log4j\log4j-core\2.26.0\log4j-core-2.26.0.jar;C:\Users\mohdw\.m2\repository\org\apache\logging\log4j\log4j-api\2.26.0\log4j-api-2.26.0.jar;C:\Users\mohdw\.m2\repository\org\apache\commons\commons-lang3\3.20.0\commons-lang3-3.20.0.jar;C:\Users\mohdw\.m2\repository\commons-io\commons-io\2.22.0\commons-io-2.22.0.jar;C:\Users\mohdw\.m2\repository\org\testng\testng\7.12.0\testng-7.12.0.jar;C:\Users\mohdw\.m2\repository\org\slf4j\slf4j-api\2.0.16\slf4j-api-2.0.16.jar;C:\Users\mohdw\.m2\repository\org\jcommander\jcommander\1.83\jcommander-1.83.jar;C:\Users\mohdw\.m2\repository\org\webjars\jquery\3.7.1\jquery-3.7.1.jar;C:\Users\mohdw\.m2\repository\com\aventstack\extentreports\5.1.2\extentreports-5.1.2.jar;C:\Users\mohdw\.m2\repository\io\reactivex\rxjava3\rxjava\3.1.6\rxjava-3.1.6.jar;C:\Users\mohdw\.m2\repository\org\reactivestreams\reactive-streams\1.0.4\reactive-streams-1.0.4.jar;C:\Users\mohdw\.m2\repository\org\freemarker\freemarker\2.3.32\freemarker-2.3.32.jar;C:\Users\mohdw\.m2\repository\org\projectlombok\lombok\1.18.26\lombok-1.18.26.jar;C:\Users\mohdw\.m2\repository\com\google\code\gson\gson\2.10.1\gson-2.10.1.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -30,7 +30,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\mohdw\AppData\Local\Temp\surefire1956136224469566509\surefirebooter-20260702164432138_3.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\mohdw\AppData\Local\Temp\surefire11966174574697148603\surefirebooter-20260707195208753_3.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="24.0.2+12-54"/>
@@ -58,35 +58,45 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="68.0"/>
   </properties>
-  <testcase name="Register" classname="TestCases.tc01_Registration" time="5.607">
-    <system-out><![CDATA[✅ Data written successfully: brsoE@gmail.com | eKQ438
-]]></system-out>
+  <testcase name="Toplinks[public void TestCases.tc00_BrokenLinksonHomePage.Toplinks(java.lang.reflect.Method)](1)" classname="TestCases.tc00_BrokenLinksonHomePage" time="5.205">
     <system-err><![CDATA[SLF4J(W): No SLF4J providers were found.
 SLF4J(W): Defaulting to no-operation (NOP) logger implementation
 SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
-2026-07-02T11:14:35.615992900Z main INFO Starting configuration XmlConfiguration[location=C:\Users\mohdw\eclipse-workspace\OpencartV121\target\test-classes\log4j2.xml, lastModified=2025-08-30T07:46:22.194Z]...
-2026-07-02T11:14:35.618995500Z main INFO Configuration XmlConfiguration[location=C:\Users\mohdw\eclipse-workspace\OpencartV121\target\test-classes\log4j2.xml, lastModified=2025-08-30T07:46:22.194Z] started.
-2026-07-02T11:14:35.624990100Z main INFO Stopping configuration org.apache.logging.log4j.core.config.DefaultConfiguration@22875539...
-2026-07-02T11:14:35.625989900Z main INFO Configuration org.apache.logging.log4j.core.config.DefaultConfiguration@22875539 stopped.
+2026-07-07T14:22:12.189381800Z main INFO Starting configuration XmlConfiguration[location=C:\Users\mohdw\eclipse-workspace\OpencartV121\target\test-classes\log4j2.xml, lastModified=2025-08-30T07:46:22.194Z]...
+2026-07-07T14:22:12.194387300Z main INFO Configuration XmlConfiguration[location=C:\Users\mohdw\eclipse-workspace\OpencartV121\target\test-classes\log4j2.xml, lastModified=2025-08-30T07:46:22.194Z] started.
+2026-07-07T14:22:12.198385100Z main INFO Stopping configuration org.apache.logging.log4j.core.config.DefaultConfiguration@530712d...
+2026-07-07T14:22:12.199385700Z main INFO Configuration org.apache.logging.log4j.core.config.DefaultConfiguration@530712d stopped.
 ]]></system-err>
   </testcase>
-  <testcase name="Login[hKKsS@gmail.com, qia2952](1)" classname="TestCases.tc02_Login_Test" time="7.906"/>
-  <testcase name="Login[AcUiK@gmail.com, Nji415](2)" classname="TestCases.tc02_Login_Test" time="4.707"/>
-  <testcase name="Login[zAylb@gmail.com, NFB092](3)" classname="TestCases.tc02_Login_Test" time="2.372"/>
-  <testcase name="logontoweb" classname="TestCases.tc03_Search" time="2.638"/>
-  <testcase name="SearchOptions[imac](1)" classname="TestCases.tc03_Search" time="1.935"/>
-  <testcase name="SearchOptions[macbook pro](2)" classname="TestCases.tc03_Search" time="1.396"/>
-  <testcase name="logofffromweb" classname="TestCases.tc03_Search" time="0.713"/>
-  <testcase name="logontoweb" classname="TestCases.tc04_Product_Display" time="2.33"/>
-  <testcase name="SearchOptions[imac](1)" classname="TestCases.tc04_Product_Display" time="2.975"/>
-  <testcase name="SearchOptions[macbook pro](2)" classname="TestCases.tc04_Product_Display" time="2.437"/>
-  <testcase name="logofffromweb" classname="TestCases.tc04_Product_Display" time="0.677"/>
-  <testcase name="logontoweb" classname="TestCases.tc05_Add_to_cart_test" time="2.459"/>
-  <testcase name="SearchOptions[imac](1)" classname="TestCases.tc05_Add_to_cart_test" time="2.608"/>
-  <testcase name="SearchOptions[macbook pro](2)" classname="TestCases.tc05_Add_to_cart_test" time="2.023"/>
-  <testcase name="logofffromweb" classname="TestCases.tc05_Add_to_cart_test" time="0.651"/>
-  <testcase name="logontoweb" classname="TestCases.tc06_Wish_List_Test" time="2.618"/>
-  <testcase name="SearchOptions[imac](1)" classname="TestCases.tc06_Wish_List_Test" time="1.51"/>
-  <testcase name="SearchOptions[macbook pro](2)" classname="TestCases.tc06_Wish_List_Test" time="1.199"/>
-  <testcase name="logofffromweb" classname="TestCases.tc06_Wish_List_Test" time="0.655"/>
+  <testcase name="FooterLinks[public void TestCases.tc00_BrokenLinksonHomePage.FooterLinks(java.lang.reflect.Method)](1)" classname="TestCases.tc00_BrokenLinksonHomePage" time="8.852"/>
+  <testcase name="Register" classname="TestCases.tc01_Registration" time="4.845">
+    <system-out><![CDATA[✅ Data written successfully: LSnxl@gmail.com | ZLa317
+]]></system-out>
+  </testcase>
+  <testcase name="Login[AcUiK@gmail.com, Nji415](1)" classname="TestCases.tc02_Login_Test" time="2.522"/>
+  <testcase name="Login[zAylb@gmail.com, NFB092](2)" classname="TestCases.tc02_Login_Test" time="2.108"/>
+  <testcase name="logontoweb" classname="TestCases.tc03_Search" time="2.181"/>
+  <testcase name="SearchOptions[imac](1)" classname="TestCases.tc03_Search" time="2.072"/>
+  <testcase name="SearchOptions[macbook pro](2)" classname="TestCases.tc03_Search" time="1.405"/>
+  <testcase name="logofffromweb" classname="TestCases.tc03_Search" time="0.731"/>
+  <testcase name="logontoweb" classname="TestCases.tc04_Product_Display" time="2.242"/>
+  <testcase name="SearchOptions[imac](1)" classname="TestCases.tc04_Product_Display" time="3.019"/>
+  <testcase name="SearchOptions[macbook pro](2)" classname="TestCases.tc04_Product_Display" time="2.384"/>
+  <testcase name="logofffromweb" classname="TestCases.tc04_Product_Display" time="0.647"/>
+  <testcase name="logontoweb" classname="TestCases.tc05_Add_to_cart_test" time="2.145"/>
+  <testcase name="SearchOptions[imac](1)" classname="TestCases.tc05_Add_to_cart_test" time="2.881"/>
+  <testcase name="SearchOptions[macbook pro](2)" classname="TestCases.tc05_Add_to_cart_test" time="2.089"/>
+  <testcase name="logofffromweb" classname="TestCases.tc05_Add_to_cart_test" time="0.666"/>
+  <testcase name="logontoweb" classname="TestCases.tc06_Wish_List_Test" time="2.373"/>
+  <testcase name="SearchOptions[imac](1)" classname="TestCases.tc06_Wish_List_Test" time="1.248"/>
+  <testcase name="SearchOptions[macbook pro](2)" classname="TestCases.tc06_Wish_List_Test" time="1.178"/>
+  <testcase name="logofffromweb" classname="TestCases.tc06_Wish_List_Test" time="0.642"/>
+  <testcase name="logontoweb" classname="TestCases.tc07_Shopcart_Test" time="2.317"/>
+  <testcase name="AddtoCart[imac](1)" classname="TestCases.tc07_Shopcart_Test" time="2.983"/>
+  <testcase name="AddtoCart[macbook pro](2)" classname="TestCases.tc07_Shopcart_Test" time="2.85"/>
+  <testcase name="CalculateValues" classname="TestCases.tc07_Shopcart_Test" time="1.066">
+    <system-out><![CDATA[3
+]]></system-out>
+  </testcase>
+  <testcase name="logofffromweb" classname="TestCases.tc07_Shopcart_Test" time="0.805"/>
 </testsuite>
