@@ -1,4 +1,4 @@
-package TestCases;
+package TestCases_using_ExcelFile;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -6,20 +6,17 @@ import org.testng.annotations.Test;
 import PageObjects.Add_to_cart_page;
 import PageObjects.HomePage;
 import PageObjects.SearchPage;
-import PageObjects.Shop_cart_Page1;
 import PageObjects.login_page;
 import TestBase.BaseClass;
 import Utilities.DataProviders;
 
-public class tc07_Shopcart_Test extends BaseClass {
+public class tc05_Add_to_cart_test extends BaseClass {
 
 	SearchPage sp;
 	HomePage hp;
 	login_page lp;
 	Add_to_cart_page acp;
-	Shop_cart_Page1 scp;
 	int r=1;
-	String A1,A2,A3;
 	
 	@Test(priority = 1)
 	public void logontoweb()
@@ -48,51 +45,21 @@ public class tc07_Shopcart_Test extends BaseClass {
 	}
 	
 	@Test(priority = 2, dependsOnMethods = {"logontoweb"}, dataProvider = "SearchData", dataProviderClass = DataProviders.class)
-	public void AddtoCart(String data)
+	public void SearchOptions(String data)
 	{
 		logger.info("***Searching the Items using dataprovider Method***");
 		sp = new SearchPage(driver);
 		acp = new Add_to_cart_page(driver);
-		scp = new Shop_cart_Page1(driver);
 		sp.SearchBar(data);
 		sp.Search();
 		sp.Img();
 		logger.info("***Adding product to the Cart***");
 		acp.AddtoCart();
-		scp.Shop();
-		scp.Quantity(r,"1");
-		//scp.Quantity(r, "1");
-		
-		r++;
+		acp.checkout();
 		sp.clearsearch();		
 	}
 	
-	@Test(priority = 3, dependsOnMethods = {"AddtoCart"})
-	public void CalculateValues() throws InterruptedException
-	{
-		A1 = scp.Value1();
-		A2 = scp.Value2();
-		A3 = scp.Total();
-		if((Double.parseDouble(A1)+Double.parseDouble(A2))==Double.parseDouble(A3))
-		{
-			Assert.assertTrue(true);
-		}
-		else
-		{
-			Assert.assertTrue(false);
-		}
-		logger.info("***Validation Completed***");
-		scp.Shop();
-		System.out.println(r);
-		for(int i=1; i<r; i++)
-		{
-			scp.Nullvalues(i);
-		}
-		logger.info("***Values got Null***");
-		scp.Continuebtn();
-	}
-	
-	@Test(priority = 4,dependsOnMethods= {"logontoweb"})
+	@Test(priority = 3, dependsOnMethods = {"SearchOptions"})
 	public void logofffromweb() throws InterruptedException
 	{
 		hp.myaccount();

@@ -1,22 +1,21 @@
-package TestCases;
+package TestCases_using_ExcelFile;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import PageObjects.Add_to_cart_page;
 import PageObjects.HomePage;
 import PageObjects.SearchPage;
+import PageObjects.Wish_List_Page;
 import PageObjects.login_page;
 import TestBase.BaseClass;
 import Utilities.DataProviders;
 
-public class tc05_Add_to_cart_test extends BaseClass {
+public class tc06_Wish_List_Test extends BaseClass{
 
 	SearchPage sp;
 	HomePage hp;
 	login_page lp;
-	Add_to_cart_page acp;
-	int r=1;
+	Wish_List_Page wlp;
 	
 	@Test(priority = 1)
 	public void logontoweb()
@@ -49,13 +48,12 @@ public class tc05_Add_to_cart_test extends BaseClass {
 	{
 		logger.info("***Searching the Items using dataprovider Method***");
 		sp = new SearchPage(driver);
-		acp = new Add_to_cart_page(driver);
+		wlp = new Wish_List_Page(driver);
 		sp.SearchBar(data);
 		sp.Search();
-		sp.Img();
-		logger.info("***Adding product to the Cart***");
-		acp.AddtoCart();
-		acp.checkout();
+		wlp.Addwish();
+		wlp.wishlist();
+		logger.info("***Adding product to WishList***");
 		sp.clearsearch();		
 	}
 	
@@ -66,5 +64,4 @@ public class tc05_Add_to_cart_test extends BaseClass {
 		hp.logout();
 		logger.info("***Logout from the Website***");
 	}
-	
 }

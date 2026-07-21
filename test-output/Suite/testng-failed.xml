@@ -3,15 +3,14 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="TestCases.tc00_BrokenLinksonHomePage">
+      <class name="TestCases_using_MySQLWorkbench.tc02_Login_Test_MySQL">
         <methods>
-          <include name="FooterLinks"/>
-          <include name="setup"/>
+          <include name="logout"/>
+          <include name="Login"/>
           <include name="Teardown"/>
-          <include name="Toplinks"/>
-          <include name="clear"/>
+          <include name="setup"/>
         </methods>
-      </class> <!-- TestCases.tc00_BrokenLinksonHomePage -->
+      </class> <!-- TestCases_using_MySQLWorkbench.tc02_Login_Test_MySQL -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

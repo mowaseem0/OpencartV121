@@ -1,13 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-07-07T19:49:26 IST" name="Suite" finished-at="2026-07-07T19:49:50 IST" duration-ms="23888">
+  <suite started-at="2026-07-21T12:03:21 IST" name="Suite" finished-at="2026-07-21T12:03:50 IST" duration-ms="29071">
     <groups>
+      <group name="Master">
+        <method signature="tc02_Login_Test_MySQL.Login(java.lang.String,java.lang.String)[pri:0, instance:TestCases_using_MySQLWorkbench.tc02_Login_Test_MySQL@9597028]" name="Login" class="TestCases_using_MySQLWorkbench.tc02_Login_Test_MySQL"/>
+      </group> <!-- Master -->
+      <group name="Datadriven">
+        <method signature="tc02_Login_Test_MySQL.Login(java.lang.String,java.lang.String)[pri:0, instance:TestCases_using_MySQLWorkbench.tc02_Login_Test_MySQL@9597028]" name="Login" class="TestCases_using_MySQLWorkbench.tc02_Login_Test_MySQL"/>
+      </group> <!-- Datadriven -->
     </groups>
-    <test started-at="2026-07-07T19:49:26 IST" name="Test" finished-at="2026-07-07T19:49:50 IST" duration-ms="23888">
-      <class name="TestCases.tc00_BrokenLinksonHomePage">
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:TestCases.tc00_BrokenLinksonHomePage@4550bb58]" started-at="2026-07-07T19:49:27 IST" name="setup" finished-at="2026-07-07T19:49:35 IST" duration-ms="7561" status="PASS">
+    <test started-at="2026-07-21T12:03:21 IST" name="Master_Test" finished-at="2026-07-21T12:03:50 IST" duration-ms="29071">
+      <class name="TestCases_using_MySQLWorkbench.tc02_Login_Test_MySQL">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:TestCases_using_MySQLWorkbench.tc02_Login_Test_MySQL@9597028]" started-at="2026-07-21T12:03:22 IST" name="setup" finished-at="2026-07-21T12:03:30 IST" duration-ms="8315" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -23,41 +29,71 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="clear()[pri:0, instance:TestCases.tc00_BrokenLinksonHomePage@4550bb58]" started-at="2026-07-07T19:49:35 IST" name="clear" finished-at="2026-07-07T19:49:35 IST" duration-ms="13" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- clear -->
-        <test-method signature="Toplinks(java.lang.reflect.Method)[pri:1, instance:TestCases.tc00_BrokenLinksonHomePage@4550bb58]" started-at="2026-07-07T19:49:35 IST" name="Toplinks" finished-at="2026-07-07T19:49:40 IST" duration-ms="5525" status="PASS">
+        <test-method signature="Login(java.lang.String,java.lang.String)[pri:0, instance:TestCases_using_MySQLWorkbench.tc02_Login_Test_MySQL@9597028]" started-at="2026-07-21T12:03:32 IST" name="Login" data-provider="TestDB" finished-at="2026-07-21T12:03:34 IST" duration-ms="2342" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void TestCases.tc00_BrokenLinksonHomePage.Toplinks(java.lang.reflect.Method)]]>
+                <![CDATA[CQqBb@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[hQL286]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Toplinks -->
-        <test-method signature="FooterLinks(java.lang.reflect.Method)[pri:2, instance:TestCases.tc00_BrokenLinksonHomePage@4550bb58]" started-at="2026-07-07T19:49:40 IST" name="FooterLinks" finished-at="2026-07-07T19:49:50 IST" duration-ms="9327" status="PASS">
+        </test-method> <!-- Login -->
+        <test-method is-config="true" signature="logout()[pri:0, instance:TestCases_using_MySQLWorkbench.tc02_Login_Test_MySQL@9597028]" started-at="2026-07-21T12:03:34 IST" name="logout" finished-at="2026-07-21T12:03:35 IST" duration-ms="1227" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method signature="Login(java.lang.String,java.lang.String)[pri:0, instance:TestCases_using_MySQLWorkbench.tc02_Login_Test_MySQL@9597028]" started-at="2026-07-21T12:03:35 IST" name="Login" data-provider="TestDB" finished-at="2026-07-21T12:03:42 IST" duration-ms="6984" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void TestCases.tc00_BrokenLinksonHomePage.FooterLinks(java.lang.reflect.Method)]]>
+                <![CDATA[nLNnG@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[yyyy]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- FooterLinks -->
-        <test-method is-config="true" signature="clear()[pri:0, instance:TestCases.tc00_BrokenLinksonHomePage@4550bb58]" started-at="2026-07-07T19:49:40 IST" name="clear" finished-at="2026-07-07T19:49:40 IST" duration-ms="0" status="PASS">
+        </test-method> <!-- Login -->
+        <test-method is-config="true" signature="logout()[pri:0, instance:TestCases_using_MySQLWorkbench.tc02_Login_Test_MySQL@9597028]" started-at="2026-07-21T12:03:42 IST" name="logout" finished-at="2026-07-21T12:03:45 IST" duration-ms="2863" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- clear -->
-        <test-method is-config="true" signature="Teardown()[pri:0, instance:TestCases.tc00_BrokenLinksonHomePage@4550bb58]" started-at="2026-07-07T19:49:50 IST" name="Teardown" finished-at="2026-07-07T19:49:50 IST" duration-ms="543" status="PASS">
+        </test-method> <!-- logout -->
+        <test-method signature="Login(java.lang.String,java.lang.String)[pri:0, instance:TestCases_using_MySQLWorkbench.tc02_Login_Test_MySQL@9597028]" started-at="2026-07-21T12:03:45 IST" name="Login" data-provider="TestDB" finished-at="2026-07-21T12:03:48 IST" duration-ms="2839" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[rBJpJ@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[ljY512]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login -->
+        <test-method is-config="true" signature="logout()[pri:0, instance:TestCases_using_MySQLWorkbench.tc02_Login_Test_MySQL@9597028]" started-at="2026-07-21T12:03:48 IST" name="logout" finished-at="2026-07-21T12:03:49 IST" duration-ms="1402" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method is-config="true" signature="Teardown()[pri:0, instance:TestCases_using_MySQLWorkbench.tc02_Login_Test_MySQL@9597028]" started-at="2026-07-21T12:03:49 IST" name="Teardown" finished-at="2026-07-21T12:03:50 IST" duration-ms="823" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Teardown -->
-      </class> <!-- TestCases.tc00_BrokenLinksonHomePage -->
-    </test> <!-- Test -->
+      </class> <!-- TestCases_using_MySQLWorkbench.tc02_Login_Test_MySQL -->
+    </test> <!-- Master_Test -->
   </suite> <!-- Suite -->
 </testng-results>

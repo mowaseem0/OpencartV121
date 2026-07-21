@@ -1,19 +1,21 @@
-package TestCases;
+package TestCases_using_ExcelFile;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import PageObjects.HomePage;
+import PageObjects.Product_Display_Page;
 import PageObjects.SearchPage;
 import PageObjects.login_page;
 import TestBase.BaseClass;
 import Utilities.DataProviders;
 
-public class tc03_Search extends BaseClass{
+public class tc04_Product_Display extends BaseClass{
 	
 	SearchPage sp;
 	HomePage hp;
 	login_page lp;
+	Product_Display_Page pdp;
 	int r=1;
 	
 	@Test(priority = 1)
@@ -47,20 +49,20 @@ public class tc03_Search extends BaseClass{
 	{
 		logger.info("***Searching the Items using dataprovider Method***");
 		sp = new SearchPage(driver);
+		pdp = new Product_Display_Page(driver);
 		sp.SearchBar(data);
 		sp.Search();
 		sp.Img();
-		String dol = sp.dollar();
-		try 
+		pdp.Bigimgclick();
+		for(int i=1;i<=5;i++)
 		{
-			rd.setCellData("Search", r, 1, dol);
-			r++;
-		} 
-		catch (Exception e) 
-		{
-			
-			logger.info(e.getMessage());
+			pdp.leftarrowkey();
 		}
+		for(int i=1;i<=5;i++)
+		{
+			pdp.rightarrowkey();
+		}
+		pdp.crossbtn();
 		sp.clearsearch();		
 	}
 	
@@ -71,4 +73,5 @@ public class tc03_Search extends BaseClass{
 		hp.logout();
 		logger.info("***Logout from the Website***");
 	}
+
 }

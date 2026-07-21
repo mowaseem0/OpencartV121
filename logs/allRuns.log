@@ -7271,3 +7271,42 @@
 2026-07-07 19:53:53 [main] INFO  TestCases.tc07_Shopcart_Test - ***Validation Completed***
 2026-07-07 19:53:54 [main] INFO  TestCases.tc07_Shopcart_Test - ***Values got Null***
 2026-07-07 19:53:55 [main] INFO  TestCases.tc07_Shopcart_Test - ***Logout from the Website***
+2026-07-21 12:01:48 [main] INFO  TestCases_using_MySQLWorkbench.tc02_Login_Test_MySQL - ***Starting TC02_Login_Test***
+2026-07-21 12:01:48 [main] INFO  TestCases_using_MySQLWorkbench.tc02_Login_Test_MySQL - ***Retrieving Data from Excel File through DataProvider***
+2026-07-21 12:01:51 [main] INFO  TestCases_using_MySQLWorkbench.tc02_Login_Test_MySQL - ***Checking validation***
+2026-07-21 12:01:51 [main] INFO  TestCases_using_MySQLWorkbench.tc02_Login_Test_MySQL - ***Test Passed***
+2026-07-21 12:01:52 [main] INFO  TestCases_using_MySQLWorkbench.tc02_Login_Test_MySQL - ***Starting TC02_Login_Test***
+2026-07-21 12:01:52 [main] INFO  TestCases_using_MySQLWorkbench.tc02_Login_Test_MySQL - ***Retrieving Data from Excel File through DataProvider***
+2026-07-21 12:01:55 [main] INFO  TestCases_using_MySQLWorkbench.tc02_Login_Test_MySQL - ***Checking validation***
+2026-07-21 12:02:00 [main] INFO  TestCases_using_MySQLWorkbench.tc02_Login_Test_MySQL - ***Test Failed***
+2026-07-21 12:02:00 [main] DEBUG TestCases_using_MySQLWorkbench.tc02_Login_Test_MySQL - Debug Test
+2026-07-21 12:02:01 [main] INFO  TestCases_using_MySQLWorkbench.tc02_Login_Test_MySQL - ***Starting TC02_Login_Test***
+2026-07-21 12:02:01 [main] INFO  TestCases_using_MySQLWorkbench.tc02_Login_Test_MySQL - ***Retrieving Data from Excel File through DataProvider***
+2026-07-21 12:02:02 [main] INFO  TestCases_using_MySQLWorkbench.tc02_Login_Test_MySQL - ***Checking validation***
+2026-07-21 12:02:03 [main] INFO  TestCases_using_MySQLWorkbench.tc02_Login_Test_MySQL - ***Test Passed***
+2026-07-21 12:03:32 [main] INFO  TestCases_using_MySQLWorkbench.tc02_Login_Test_MySQL - ***Starting TC02_Login_Test***
+2026-07-21 12:03:32 [main] INFO  TestCases_using_MySQLWorkbench.tc02_Login_Test_MySQL - ***Retrieving Data from Excel File through DataProvider***
+2026-07-21 12:03:34 [main] INFO  TestCases_using_MySQLWorkbench.tc02_Login_Test_MySQL - ***Checking validation***
+2026-07-21 12:03:34 [main] INFO  TestCases_using_MySQLWorkbench.tc02_Login_Test_MySQL - ***Test Passed***
+2026-07-21 12:03:35 [main] INFO  TestCases_using_MySQLWorkbench.tc02_Login_Test_MySQL - ***Starting TC02_Login_Test***
+2026-07-21 12:03:35 [main] INFO  TestCases_using_MySQLWorkbench.tc02_Login_Test_MySQL - ***Retrieving Data from Excel File through DataProvider***
+2026-07-21 12:03:37 [main] INFO  TestCases_using_MySQLWorkbench.tc02_Login_Test_MySQL - ***Checking validation***
+2026-07-21 12:03:42 [main] INFO  TestCases_using_MySQLWorkbench.tc02_Login_Test_MySQL - ***Test Failed***
+2026-07-21 12:03:42 [main] DEBUG TestCases_using_MySQLWorkbench.tc02_Login_Test_MySQL - Debug Test
+2026-07-21 12:03:45 [main] INFO  TestCases_using_MySQLWorkbench.tc02_Login_Test_MySQL - ***Starting TC02_Login_Test***
+2026-07-21 12:03:45 [main] INFO  TestCases_using_MySQLWorkbench.tc02_Login_Test_MySQL - ***Retrieving Data from Excel File through DataProvider***
+2026-07-21 12:03:48 [main] INFO  TestCases_using_MySQLWorkbench.tc02_Login_Test_MySQL - ***Checking validation***
+2026-07-21 12:03:48 [main] INFO  TestCases_using_MySQLWorkbench.tc02_Login_Test_MySQL - ***Test Passed***
+2026-07-21 12:04:51 [main] INFO  TestCases_using_MySQLWorkbench.tc02_Login_Test_MySQL - ***Starting TC02_Login_Test***
+2026-07-21 12:04:51 [main] INFO  TestCases_using_MySQLWorkbench.tc02_Login_Test_MySQL - ***Retrieving Data from Excel File through DataProvider***
+2026-07-21 12:04:54 [main] INFO  TestCases_using_MySQLWorkbench.tc02_Login_Test_MySQL - ***Checking validation***
+2026-07-21 12:04:54 [main] INFO  TestCases_using_MySQLWorkbench.tc02_Login_Test_MySQL - ***Test Passed***
+2026-07-21 12:04:56 [main] INFO  TestCases_using_MySQLWorkbench.tc02_Login_Test_MySQL - ***Starting TC02_Login_Test***
+2026-07-21 12:04:56 [main] INFO  TestCases_using_MySQLWorkbench.tc02_Login_Test_MySQL - ***Retrieving Data from Excel File through DataProvider***
+2026-07-21 12:04:57 [main] INFO  TestCases_using_MySQLWorkbench.tc02_Login_Test_MySQL - ***Checking validation***
+2026-07-21 12:05:03 [main] INFO  TestCases_using_MySQLWorkbench.tc02_Login_Test_MySQL - ***Test Failed***
+2026-07-21 12:05:03 [main] DEBUG TestCases_using_MySQLWorkbench.tc02_Login_Test_MySQL - Debug Test
+2026-07-21 12:05:04 [main] INFO  TestCases_using_MySQLWorkbench.tc02_Login_Test_MySQL - ***Starting TC02_Login_Test***
+2026-07-21 12:05:04 [main] INFO  TestCases_using_MySQLWorkbench.tc02_Login_Test_MySQL - ***Retrieving Data from Excel File through DataProvider***
+2026-07-21 12:05:05 [main] INFO  TestCases_using_MySQLWorkbench.tc02_Login_Test_MySQL - ***Checking validation***
+2026-07-21 12:05:18 [main] INFO  TestCases_using_MySQLWorkbench.tc02_Login_Test_MySQL - ***Test Passed***

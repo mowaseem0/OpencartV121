@@ -1,4 +1,4 @@
-package TestCases;
+package TestCases_using_ExcelFile;
 
 import java.lang.reflect.Method;
 

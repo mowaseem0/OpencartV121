@@ -1,23 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="26" passed="26" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-07-07T19:52:10 IST" name="Suite" finished-at="2026-07-07T19:53:55 IST" duration-ms="105001">
+  <suite started-at="2026-07-21T12:04:41 IST" name="Suite" finished-at="2026-07-21T12:05:22 IST" duration-ms="41189">
     <groups>
       <group name="Master">
-        <method signature="tc01_Registration.Register()[pri:0, instance:TestCases.tc01_Registration@1139b2f3]" name="Register" class="TestCases.tc01_Registration"/>
-        <method signature="tc02_Login_Test.Login(java.lang.String,java.lang.String)[pri:0, instance:TestCases.tc02_Login_Test@7a69b07]" name="Login" class="TestCases.tc02_Login_Test"/>
+        <method signature="tc02_Login_Test_MySQL.Login(java.lang.String,java.lang.String)[pri:0, instance:TestCases_using_MySQLWorkbench.tc02_Login_Test_MySQL@64cd705f]" name="Login" class="TestCases_using_MySQLWorkbench.tc02_Login_Test_MySQL"/>
       </group> <!-- Master -->
-      <group name="Sanity">
-        <method signature="tc01_Registration.Register()[pri:0, instance:TestCases.tc01_Registration@1139b2f3]" name="Register" class="TestCases.tc01_Registration"/>
-      </group> <!-- Sanity -->
       <group name="Datadriven">
-        <method signature="tc02_Login_Test.Login(java.lang.String,java.lang.String)[pri:0, instance:TestCases.tc02_Login_Test@7a69b07]" name="Login" class="TestCases.tc02_Login_Test"/>
+        <method signature="tc02_Login_Test_MySQL.Login(java.lang.String,java.lang.String)[pri:0, instance:TestCases_using_MySQLWorkbench.tc02_Login_Test_MySQL@64cd705f]" name="Login" class="TestCases_using_MySQLWorkbench.tc02_Login_Test_MySQL"/>
       </group> <!-- Datadriven -->
     </groups>
-    <test started-at="2026-07-07T19:52:10 IST" name="Master_Test" finished-at="2026-07-07T19:53:55 IST" duration-ms="105001">
-      <class name="TestCases.tc02_Login_Test">
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:TestCases.tc02_Login_Test@7a69b07]" started-at="2026-07-07T19:52:44 IST" name="setup" finished-at="2026-07-07T19:52:47 IST" duration-ms="2886" status="PASS">
+    <test started-at="2026-07-21T12:04:41 IST" name="Master_Test" finished-at="2026-07-21T12:05:22 IST" duration-ms="41189">
+      <class name="TestCases_using_MySQLWorkbench.tc02_Login_Test_MySQL">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:TestCases_using_MySQLWorkbench.tc02_Login_Test_MySQL@64cd705f]" started-at="2026-07-21T12:04:42 IST" name="setup" finished-at="2026-07-21T12:04:49 IST" duration-ms="7386" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -33,393 +29,71 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="Login(java.lang.String,java.lang.String)[pri:0, instance:TestCases.tc02_Login_Test@7a69b07]" started-at="2026-07-07T19:52:50 IST" name="Login" data-provider="LoginData" finished-at="2026-07-07T19:52:53 IST" duration-ms="2523" status="PASS">
+        <test-method signature="Login(java.lang.String,java.lang.String)[pri:0, instance:TestCases_using_MySQLWorkbench.tc02_Login_Test_MySQL@64cd705f]" started-at="2026-07-21T12:04:51 IST" name="Login" data-provider="TestDB" finished-at="2026-07-21T12:04:54 IST" duration-ms="3266" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[AcUiK@gmail.com]]>
+                <![CDATA[CQqBb@gmail.com]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[Nji415]]>
+                <![CDATA[hQL286]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Login -->
-        <test-method is-config="true" signature="logout()[pri:0, instance:TestCases.tc02_Login_Test@7a69b07]" started-at="2026-07-07T19:52:53 IST" name="logout" finished-at="2026-07-07T19:52:54 IST" duration-ms="1184" status="PASS">
+        <test-method is-config="true" signature="logout()[pri:0, instance:TestCases_using_MySQLWorkbench.tc02_Login_Test_MySQL@64cd705f]" started-at="2026-07-21T12:04:54 IST" name="logout" finished-at="2026-07-21T12:04:56 IST" duration-ms="1650" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logout -->
-        <test-method signature="Login(java.lang.String,java.lang.String)[pri:0, instance:TestCases.tc02_Login_Test@7a69b07]" started-at="2026-07-07T19:52:54 IST" name="Login" data-provider="LoginData" finished-at="2026-07-07T19:52:56 IST" duration-ms="2108" status="PASS">
+        <test-method signature="Login(java.lang.String,java.lang.String)[pri:0, instance:TestCases_using_MySQLWorkbench.tc02_Login_Test_MySQL@64cd705f]" started-at="2026-07-21T12:04:56 IST" name="Login" data-provider="TestDB" finished-at="2026-07-21T12:05:03 IST" duration-ms="7028" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[zAylb@gmail.com]]>
+                <![CDATA[nLNnG@gmail.com]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[NFB092]]>
+                <![CDATA[yyyy]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Login -->
-        <test-method is-config="true" signature="logout()[pri:0, instance:TestCases.tc02_Login_Test@7a69b07]" started-at="2026-07-07T19:52:56 IST" name="logout" finished-at="2026-07-07T19:52:57 IST" duration-ms="1208" status="PASS">
+        <test-method is-config="true" signature="logout()[pri:0, instance:TestCases_using_MySQLWorkbench.tc02_Login_Test_MySQL@64cd705f]" started-at="2026-07-21T12:05:03 IST" name="logout" finished-at="2026-07-21T12:05:04 IST" duration-ms="749" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logout -->
-        <test-method is-config="true" signature="Teardown()[pri:0, instance:TestCases.tc02_Login_Test@7a69b07]" started-at="2026-07-07T19:52:57 IST" name="Teardown" finished-at="2026-07-07T19:52:58 IST" duration-ms="494" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Teardown -->
-      </class> <!-- TestCases.tc02_Login_Test -->
-      <class name="TestCases.tc03_Search">
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:TestCases.tc03_Search@636be97c]" started-at="2026-07-07T19:52:58 IST" name="setup" finished-at="2026-07-07T19:53:03 IST" duration-ms="5650" status="PASS">
+        <test-method signature="Login(java.lang.String,java.lang.String)[pri:0, instance:TestCases_using_MySQLWorkbench.tc02_Login_Test_MySQL@64cd705f]" started-at="2026-07-21T12:05:04 IST" name="Login" data-provider="TestDB" finished-at="2026-07-21T12:05:18 IST" duration-ms="14832" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[chrome]]>
+                <![CDATA[rBJpJ@gmail.com]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[windows]]>
+                <![CDATA[ljY512]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="logontoweb()[pri:1, instance:TestCases.tc03_Search@636be97c]" started-at="2026-07-07T19:53:03 IST" name="logontoweb" finished-at="2026-07-07T19:53:06 IST" duration-ms="2181" status="PASS">
+        </test-method> <!-- Login -->
+        <test-method is-config="true" signature="logout()[pri:0, instance:TestCases_using_MySQLWorkbench.tc02_Login_Test_MySQL@64cd705f]" started-at="2026-07-21T12:05:18 IST" name="logout" finished-at="2026-07-21T12:05:21 IST" duration-ms="2779" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- logontoweb -->
-        <test-method signature="SearchOptions(java.lang.String)[pri:2, instance:TestCases.tc03_Search@636be97c]" started-at="2026-07-07T19:53:06 IST" name="SearchOptions" data-provider="SearchData" finished-at="2026-07-07T19:53:08 IST" depends-on-methods="TestCases.tc03_Search.logontoweb" duration-ms="2074" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[imac]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- SearchOptions -->
-        <test-method signature="SearchOptions(java.lang.String)[pri:2, instance:TestCases.tc03_Search@636be97c]" started-at="2026-07-07T19:53:08 IST" name="SearchOptions" data-provider="SearchData" finished-at="2026-07-07T19:53:09 IST" depends-on-methods="TestCases.tc03_Search.logontoweb" duration-ms="1406" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[macbook pro]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- SearchOptions -->
-        <test-method signature="logofffromweb()[pri:3, instance:TestCases.tc03_Search@636be97c]" started-at="2026-07-07T19:53:09 IST" name="logofffromweb" finished-at="2026-07-07T19:53:10 IST" depends-on-methods="TestCases.tc03_Search.SearchOptions" duration-ms="730" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logofffromweb -->
-        <test-method is-config="true" signature="Teardown()[pri:0, instance:TestCases.tc03_Search@636be97c]" started-at="2026-07-07T19:53:10 IST" name="Teardown" finished-at="2026-07-07T19:53:10 IST" duration-ms="379" status="PASS">
+        </test-method> <!-- logout -->
+        <test-method is-config="true" signature="Teardown()[pri:0, instance:TestCases_using_MySQLWorkbench.tc02_Login_Test_MySQL@64cd705f]" started-at="2026-07-21T12:05:21 IST" name="Teardown" finished-at="2026-07-21T12:05:22 IST" duration-ms="716" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Teardown -->
-      </class> <!-- TestCases.tc03_Search -->
-      <class name="TestCases.tc05_Add_to_cart_test">
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:TestCases.tc05_Add_to_cart_test@1817d444]" started-at="2026-07-07T19:53:22 IST" name="setup" finished-at="2026-07-07T19:53:25 IST" duration-ms="2860" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[windows]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="logontoweb()[pri:1, instance:TestCases.tc05_Add_to_cart_test@1817d444]" started-at="2026-07-07T19:53:25 IST" name="logontoweb" finished-at="2026-07-07T19:53:27 IST" duration-ms="2147" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logontoweb -->
-        <test-method signature="SearchOptions(java.lang.String)[pri:2, instance:TestCases.tc05_Add_to_cart_test@1817d444]" started-at="2026-07-07T19:53:27 IST" name="SearchOptions" data-provider="SearchData" finished-at="2026-07-07T19:53:30 IST" depends-on-methods="TestCases.tc05_Add_to_cart_test.logontoweb" duration-ms="2881" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[imac]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- SearchOptions -->
-        <test-method signature="SearchOptions(java.lang.String)[pri:2, instance:TestCases.tc05_Add_to_cart_test@1817d444]" started-at="2026-07-07T19:53:30 IST" name="SearchOptions" data-provider="SearchData" finished-at="2026-07-07T19:53:32 IST" depends-on-methods="TestCases.tc05_Add_to_cart_test.logontoweb" duration-ms="2090" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[macbook pro]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- SearchOptions -->
-        <test-method signature="logofffromweb()[pri:3, instance:TestCases.tc05_Add_to_cart_test@1817d444]" started-at="2026-07-07T19:53:32 IST" name="logofffromweb" finished-at="2026-07-07T19:53:33 IST" depends-on-methods="TestCases.tc05_Add_to_cart_test.SearchOptions" duration-ms="664" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logofffromweb -->
-        <test-method is-config="true" signature="Teardown()[pri:0, instance:TestCases.tc05_Add_to_cart_test@1817d444]" started-at="2026-07-07T19:53:33 IST" name="Teardown" finished-at="2026-07-07T19:53:33 IST" duration-ms="359" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Teardown -->
-      </class> <!-- TestCases.tc05_Add_to_cart_test -->
-      <class name="TestCases.tc06_Wish_List_Test">
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:TestCases.tc06_Wish_List_Test@6ca8564a]" started-at="2026-07-07T19:53:33 IST" name="setup" finished-at="2026-07-07T19:53:36 IST" duration-ms="2961" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[windows]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="logontoweb()[pri:1, instance:TestCases.tc06_Wish_List_Test@6ca8564a]" started-at="2026-07-07T19:53:36 IST" name="logontoweb" finished-at="2026-07-07T19:53:38 IST" duration-ms="2373" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logontoweb -->
-        <test-method signature="SearchOptions(java.lang.String)[pri:2, instance:TestCases.tc06_Wish_List_Test@6ca8564a]" started-at="2026-07-07T19:53:39 IST" name="SearchOptions" data-provider="SearchData" finished-at="2026-07-07T19:53:40 IST" depends-on-methods="TestCases.tc06_Wish_List_Test.logontoweb" duration-ms="1247" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[imac]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- SearchOptions -->
-        <test-method signature="SearchOptions(java.lang.String)[pri:2, instance:TestCases.tc06_Wish_List_Test@6ca8564a]" started-at="2026-07-07T19:53:40 IST" name="SearchOptions" data-provider="SearchData" finished-at="2026-07-07T19:53:41 IST" depends-on-methods="TestCases.tc06_Wish_List_Test.logontoweb" duration-ms="1177" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[macbook pro]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- SearchOptions -->
-        <test-method signature="logofffromweb()[pri:3, instance:TestCases.tc06_Wish_List_Test@6ca8564a]" started-at="2026-07-07T19:53:41 IST" name="logofffromweb" finished-at="2026-07-07T19:53:42 IST" depends-on-methods="TestCases.tc06_Wish_List_Test.SearchOptions" duration-ms="641" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logofffromweb -->
-        <test-method is-config="true" signature="Teardown()[pri:0, instance:TestCases.tc06_Wish_List_Test@6ca8564a]" started-at="2026-07-07T19:53:42 IST" name="Teardown" finished-at="2026-07-07T19:53:42 IST" duration-ms="368" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Teardown -->
-      </class> <!-- TestCases.tc06_Wish_List_Test -->
-      <class name="TestCases.tc01_Registration">
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:TestCases.tc01_Registration@1139b2f3]" started-at="2026-07-07T19:52:35 IST" name="setup" finished-at="2026-07-07T19:52:38 IST" duration-ms="3092" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[windows]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="Register()[pri:0, instance:TestCases.tc01_Registration@1139b2f3]" started-at="2026-07-07T19:52:38 IST" name="Register" finished-at="2026-07-07T19:52:43 IST" duration-ms="4829" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Register -->
-        <test-method is-config="true" signature="Teardown()[pri:0, instance:TestCases.tc01_Registration@1139b2f3]" started-at="2026-07-07T19:52:43 IST" name="Teardown" finished-at="2026-07-07T19:52:44 IST" duration-ms="364" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Teardown -->
-      </class> <!-- TestCases.tc01_Registration -->
-      <class name="TestCases.tc00_BrokenLinksonHomePage">
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:TestCases.tc00_BrokenLinksonHomePage@30ee2816]" started-at="2026-07-07T19:52:11 IST" name="setup" finished-at="2026-07-07T19:52:21 IST" duration-ms="9956" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[windows]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method is-config="true" signature="clear()[pri:0, instance:TestCases.tc00_BrokenLinksonHomePage@30ee2816]" started-at="2026-07-07T19:52:21 IST" name="clear" finished-at="2026-07-07T19:52:21 IST" duration-ms="3" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- clear -->
-        <test-method signature="Toplinks(java.lang.reflect.Method)[pri:1, instance:TestCases.tc00_BrokenLinksonHomePage@30ee2816]" started-at="2026-07-07T19:52:21 IST" name="Toplinks" finished-at="2026-07-07T19:52:26 IST" duration-ms="5202" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void TestCases.tc00_BrokenLinksonHomePage.Toplinks(java.lang.reflect.Method)]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Toplinks -->
-        <test-method is-config="true" signature="clear()[pri:0, instance:TestCases.tc00_BrokenLinksonHomePage@30ee2816]" started-at="2026-07-07T19:52:26 IST" name="clear" finished-at="2026-07-07T19:52:26 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- clear -->
-        <test-method signature="FooterLinks(java.lang.reflect.Method)[pri:2, instance:TestCases.tc00_BrokenLinksonHomePage@30ee2816]" started-at="2026-07-07T19:52:26 IST" name="FooterLinks" finished-at="2026-07-07T19:52:35 IST" duration-ms="8861" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void TestCases.tc00_BrokenLinksonHomePage.FooterLinks(java.lang.reflect.Method)]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- FooterLinks -->
-        <test-method is-config="true" signature="Teardown()[pri:0, instance:TestCases.tc00_BrokenLinksonHomePage@30ee2816]" started-at="2026-07-07T19:52:35 IST" name="Teardown" finished-at="2026-07-07T19:52:35 IST" duration-ms="473" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Teardown -->
-      </class> <!-- TestCases.tc00_BrokenLinksonHomePage -->
-      <class name="TestCases.tc07_Shopcart_Test">
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:TestCases.tc07_Shopcart_Test@50b472aa]" started-at="2026-07-07T19:53:42 IST" name="setup" finished-at="2026-07-07T19:53:45 IST" duration-ms="2792" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[windows]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="logontoweb()[pri:1, instance:TestCases.tc07_Shopcart_Test@50b472aa]" started-at="2026-07-07T19:53:45 IST" name="logontoweb" finished-at="2026-07-07T19:53:47 IST" duration-ms="2316" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logontoweb -->
-        <test-method signature="AddtoCart(java.lang.String)[pri:2, instance:TestCases.tc07_Shopcart_Test@50b472aa]" started-at="2026-07-07T19:53:47 IST" name="AddtoCart" data-provider="SearchData" finished-at="2026-07-07T19:53:50 IST" depends-on-methods="TestCases.tc07_Shopcart_Test.logontoweb" duration-ms="2982" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[imac]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AddtoCart -->
-        <test-method signature="AddtoCart(java.lang.String)[pri:2, instance:TestCases.tc07_Shopcart_Test@50b472aa]" started-at="2026-07-07T19:53:50 IST" name="AddtoCart" data-provider="SearchData" finished-at="2026-07-07T19:53:53 IST" depends-on-methods="TestCases.tc07_Shopcart_Test.logontoweb" duration-ms="2849" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[macbook pro]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AddtoCart -->
-        <test-method signature="CalculateValues()[pri:3, instance:TestCases.tc07_Shopcart_Test@50b472aa]" started-at="2026-07-07T19:53:53 IST" name="CalculateValues" finished-at="2026-07-07T19:53:54 IST" depends-on-methods="TestCases.tc07_Shopcart_Test.AddtoCart" duration-ms="1066" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- CalculateValues -->
-        <test-method signature="logofffromweb()[pri:4, instance:TestCases.tc07_Shopcart_Test@50b472aa]" started-at="2026-07-07T19:53:54 IST" name="logofffromweb" finished-at="2026-07-07T19:53:55 IST" depends-on-methods="TestCases.tc07_Shopcart_Test.logontoweb" duration-ms="806" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logofffromweb -->
-        <test-method is-config="true" signature="Teardown()[pri:0, instance:TestCases.tc07_Shopcart_Test@50b472aa]" started-at="2026-07-07T19:53:55 IST" name="Teardown" finished-at="2026-07-07T19:53:55 IST" duration-ms="391" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Teardown -->
-      </class> <!-- TestCases.tc07_Shopcart_Test -->
-      <class name="TestCases.tc04_Product_Display">
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:TestCases.tc04_Product_Display@50a638b5]" started-at="2026-07-07T19:53:10 IST" name="setup" finished-at="2026-07-07T19:53:13 IST" duration-ms="2881" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[windows]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="logontoweb()[pri:1, instance:TestCases.tc04_Product_Display@50a638b5]" started-at="2026-07-07T19:53:13 IST" name="logontoweb" finished-at="2026-07-07T19:53:15 IST" duration-ms="2245" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logontoweb -->
-        <test-method signature="SearchOptions(java.lang.String)[pri:2, instance:TestCases.tc04_Product_Display@50a638b5]" started-at="2026-07-07T19:53:16 IST" name="SearchOptions" data-provider="SearchData" finished-at="2026-07-07T19:53:19 IST" depends-on-methods="TestCases.tc04_Product_Display.logontoweb" duration-ms="3016" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[imac]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- SearchOptions -->
-        <test-method signature="SearchOptions(java.lang.String)[pri:2, instance:TestCases.tc04_Product_Display@50a638b5]" started-at="2026-07-07T19:53:19 IST" name="SearchOptions" data-provider="SearchData" finished-at="2026-07-07T19:53:21 IST" depends-on-methods="TestCases.tc04_Product_Display.logontoweb" duration-ms="2384" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[macbook pro]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- SearchOptions -->
-        <test-method signature="logofffromweb()[pri:3, instance:TestCases.tc04_Product_Display@50a638b5]" started-at="2026-07-07T19:53:21 IST" name="logofffromweb" finished-at="2026-07-07T19:53:22 IST" depends-on-methods="TestCases.tc04_Product_Display.SearchOptions" duration-ms="648" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logofffromweb -->
-        <test-method is-config="true" signature="Teardown()[pri:0, instance:TestCases.tc04_Product_Display@50a638b5]" started-at="2026-07-07T19:53:22 IST" name="Teardown" finished-at="2026-07-07T19:53:22 IST" duration-ms="378" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Teardown -->
-      </class> <!-- TestCases.tc04_Product_Display -->
+      </class> <!-- TestCases_using_MySQLWorkbench.tc02_Login_Test_MySQL -->
     </test> <!-- Master_Test -->
   </suite> <!-- Suite -->
 </testng-results>
