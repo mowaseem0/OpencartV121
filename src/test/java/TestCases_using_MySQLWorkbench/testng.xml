@@ -2,7 +2,10 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite">
   <test thread-count="5" name="Test">
+  <parameter name="browser" value="edge"/>
+  <parameter name="os" value="windows"/>
     <classes>
+      <class name="TestCases_using_MySQLWorkbench.tc01_Registration_test_MySQL"/>
       <class name="TestCases_using_MySQLWorkbench.tc02_Login_Test_MySQL"/>
     </classes>
   </test> <!-- Test -->

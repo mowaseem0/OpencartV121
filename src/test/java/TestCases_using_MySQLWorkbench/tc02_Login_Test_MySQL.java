@@ -43,7 +43,7 @@ public class tc02_Login_Test_MySQL extends BaseClass {
 				Testvalid(user,"Test Passed");
 				logger.info("***Test Passed***");
 				b=true;
-				
+				Assert.assertTrue(true);
 			}
 			else
 			{
@@ -51,6 +51,7 @@ public class tc02_Login_Test_MySQL extends BaseClass {
 				logger.info("***Test Failed***");
 				logger.debug("Debug Test");
 				b=false;
+				Assert.assertTrue(false);
 			}
 		}
 		catch(Exception e)
